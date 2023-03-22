@@ -26,6 +26,7 @@ const search = async (params: searchParams) => {
 }
 
 watch(breedId, (newBreedId) => {
+    searchResults.value = [];
     const pagination = { limit: 10, page: 0 }
     paginationParams.value = pagination;
     search({ ...pagination, breed_id: newBreedId });
@@ -35,7 +36,7 @@ watch(breedId, (newBreedId) => {
 <template>
     <BContainer>
         <h1>Cat Browser</h1>
-        <CatBreedSelect v-model="breedId" />
+        <CatBreedSelect v-model="breedId" class="mb-4"/>
         <CatList :items="searchResults" />
     </BContainer>
 </template>

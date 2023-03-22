@@ -39,7 +39,7 @@ init();
 <template>
     <div>
         <label class="mb-2">Breed</label>
-        <b-form-select :model-value="props.modelValue" :options="options" @input="updateValue"
+        <b-form-select :disabled="!breeds.length" :model-value="props.modelValue" :options="options" @input="updateValue"
             :text-field="'text'"></b-form-select>
     </div>
 </template>
