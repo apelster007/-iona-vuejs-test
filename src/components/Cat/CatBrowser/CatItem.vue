@@ -5,6 +5,7 @@ import { useRouter } from 'vue-router';
 export interface CatListProps {
     item: CatImage;
 }
+
 const props = defineProps<CatListProps>()
 const router = useRouter();
 

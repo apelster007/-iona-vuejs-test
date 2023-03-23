@@ -11,7 +11,7 @@ const props = defineProps<CatListProps>()
 </script>
 <template>
     <b-row class="bd-example-row">
-        <b-col cols="3" v-for="image in items" :key="image.id" class="mb-4">
+        <b-col cols="12" md="4" lg="3" v-for="image in items" :key="image.id" class="mb-4">
             <CatItem :item="image" />
         </b-col>
     </b-row>

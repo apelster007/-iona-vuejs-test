@@ -28,7 +28,6 @@ const init = async () => {
         if (response?.status === 200) {
             breeds.value = response.data
         }
-        console.log(options.value)
     } catch (err) {
         console.log(err);
     }

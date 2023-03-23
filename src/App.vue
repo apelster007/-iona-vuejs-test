@@ -4,7 +4,7 @@ import LoadingOverlay from '@/layout/LoadingOverlay.vue'
 </script>
 
 <template>
-  <main>
+  <main class="p-4">
     <Suspense>
       <RouterView />
       <template #fallback>
